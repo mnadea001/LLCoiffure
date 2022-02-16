@@ -103,14 +103,10 @@ padding-right: 20px;
 /* SECTION BLOC */
 
 section {display:flex;
-    /* background-color: #403E3F; */
- /* position: fixed; */
-  /* top: -50%; */
   left: -50%;
   right: -50%;
-  /* bottom: -50%; */
   width: 200%;
-  height: 200vh;
+
   background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
   background-repeat: repeat;
   animation: bg-animation .2s infinite;
@@ -200,13 +196,7 @@ font-weight: bolder;
     position: relative;
 }
 
-/* .content__item::before {
-    color: var(--color-number);
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: counters(itemcounter, ".", decimal-leading-zero);
-} */
+
 .link {
     cursor: pointer;
     font-size: 18px;
@@ -275,11 +265,8 @@ font-weight: bolder;
 .container
 {
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
   flex-wrap: wrap;
-  padding: 40px 0;
-
+padding-top: 90px;
 }
 
 .container .box
