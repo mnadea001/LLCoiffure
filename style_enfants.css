@@ -20,13 +20,6 @@ ul {
   list-style: none;
 }
 
-body {
-  background-color: #111111;
-  margin: 0;
-  overflow-x: hidden;
-}
-
-
 /* NAVBAR */
 
 nav {
@@ -40,7 +33,7 @@ height: 22vh;
 
 h1 {
     font-size:80px;
-    color: black;
+    
     z-index: 1;
 }
 
@@ -90,6 +83,12 @@ h1 {
     80% {opacity:1;}
     100% {opacity:0;width:355px;}
 }
+
+/* SECTION BLOC */
+
+section {display:flex;
+    background-color: #403E3F;  }
+
 /* ASIDE PART - LEFT NAVBAR */
 aside {
 background-color: #ADD9F4;
@@ -98,40 +97,7 @@ color: #f4f7f8;
 padding-left: 20px;
 padding-right: 20px;
 
-
 }
-/* SECTION BLOC */
-
-section {display:flex;
-    /* background-color: #403E3F; */
- /* position: fixed; */
-  /* top: -50%; */
-  left: -50%;
-  right: -50%;
-  /* bottom: -50%; */
-  width: 200%;
-  height: 200vh;
-  background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
-  background-repeat: repeat;
-  animation: bg-animation .2s infinite;
-  opacity: .9;
-  visibility: visible;
-} 
-@keyframes section-animation {
-    0% { transform: translate(0,0) }
-    10% { transform: translate(-5%,-5%) }
-    20% { transform: translate(-10%,5%) }
-    30% { transform: translate(5%,-10%) }
-    40% { transform: translate(-5%,15%) }
-    50% { transform: translate(-10%,5%) }
-    60% { transform: translate(15%,0) }
-    70% { transform: translate(0,10%) }
-    80% { transform: translate(-15%,0) }
-    90% { transform: translate(10%,5%) }
-    100% { transform: translate(5%,0) }
-}
-
-
 
 
 /* TEST A HOVER ANIMATION */
@@ -263,146 +229,9 @@ font-weight: bolder;
     transition-delay: 0s;
 }
 
-/* ANIMATED CARDS */
 
-.firstline {
-    display: flex;
-    margin-left: 250px;
+/* IMAGES */
 
-}
-
-
-.container
-{
-  display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
-  flex-wrap: wrap;
-  padding: 40px 0;
-
-}
-
-.container .box
-{
-  position: relative;
-  width: 500px;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 40px 30px;
-  transition: 0.5s;
-
-}
-
-.container .box::before
-{
-  content:' ';
-  position: absolute;
-  top: 0;
-  left: 80px;
-  width: 70%;
-  height: 100%;
-  text-decoration: none;
-  background: #fff;
-  border-radius: 8px;
-  transform: skewX(15deg);
-  transition: 0.5s;
-}
-
-.container .box::after
-{
-  content:'';
-  position: absolute;
-  top: 0;
-  left: 50;
-  width: 20%;
-  height: 100%;
-  background: #fff;
-  border-radius: 8px;
-  transform: skewX(15deg);
-  transition: 0.5s;
-  filter: blur(30px);
-}
-
-.container .box:hover:before,
-.container .box:hover:after
-{
-  transform: skewX(0deg);
-  left: 20px;
-  width: calc(100% - 90px);
-  
-}
-
-.container .box:nth-child(1):before,
-.container .box:nth-child(1):after
-{
-  /* background: linear-gradient(315deg, #5a5d5e, #C2AC51) */
-    background: #C2AC51;
-}
-@keyframes animate
-{
-  0%, 100%
-  {
-    transform: translateY(10px);
-  }
-  
-  50%
-  {
-    transform: translate(-10px);
-  }
-}
-
-.container .box .content2
-{
-  position: relative;
-  left: 0;
-  padding: 20px 40px;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  z-index: 1;
-  transform: 0.5s;
-  color: #fff;
-}
-
-.container .box:hover .content2
-{
-  left: -25px;
-  padding: 60px 40px;
-}
-
-.container .box .content2 h2
-{
-  font-size: 2em;
-  color: #fff;
-  margin-bottom: 10px;
-}
-
-.container .box .content2 p
-{
-  font-size: 1.1em;
-  margin-bottom: 10px;
-  line-height: 1.4em;
-}
-
-.container .box .content2 a
-{
-  display: inline-block;
-  font-size: 1.1em;
-  color: #111;
-  background: #fff;
-  padding: 10px;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 700;
-  margin-top: 5px;
-}
-
-.container .box .content2 a:hover
-{
-  background: #f8d983;
-  border: 1px solid rgba(226, 179, 196, 0.4);
-  box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
-}
+img {height: 400px;
+padding-left:30px;
+padding-top:40px;}
